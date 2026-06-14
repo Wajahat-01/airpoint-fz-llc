@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="45%" stop-color="#0f1f35"/>
+      <stop offset="100%" stop-color="#0a1628"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00e5ff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+
+  <ellipse cx="1550" cy="280" rx="420" ry="320" fill="url(#orb)"/>
+  <ellipse cx="320" cy="820" rx="300" ry="220" fill="url(#orb)" opacity="0.6"/>
+
+  <g stroke="#00e5ff" stroke-opacity="0.12" stroke-width="2">
+    <rect x="180" y="160" width="520" height="280" rx="16"/>
+    <rect x="220" y="200" width="180" height="200" rx="8"/>
+    <rect x="440" y="200" width="220" height="90" rx="8"/>
+    <rect x="440" y="310" width="220" height="90" rx="8"/>
+    <path d="M760 300 H1180 V420 H760 Z" opacity="0.7"/>
+    <path d="M1180 300 H1520 V360 H1180 Z"/>
+    <path d="M1180 360 H1520 V420 H1180 Z"/>
+    <circle cx="1360" cy="510" r="90"/>
+    <circle cx="1360" cy="510" r="55" stroke-opacity="0.2"/>
+    <path d="M1360 420 V600 M1270 510 H1450" stroke-opacity="0.2"/>
+  </g>
+
+  <g fill="#00e5ff" fill-opacity="0.08">
+    <circle cx="400" cy="340" r="6"/>
+    <circle cx="520" cy="260" r="4"/>
+    <circle cx="1320" cy="510" r="8"/>
+    <circle cx="1480" cy="360" r="5"/>
+    <circle cx="900" cy="360" r="5"/>
+  </g>
+
+  <rect x="0" y="520" width="1920" height="4" fill="url(#glow)"/>
+  <path d="M0 900 Q960 820 1920 900" stroke="#00e5ff" stroke-opacity="0.08" stroke-width="2" fill="none"/>
+</svg>
