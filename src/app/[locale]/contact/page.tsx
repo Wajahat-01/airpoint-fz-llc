@@ -68,16 +68,22 @@ export default async function ContactPage({ params }: PageProps) {
                 </div>
               </a>
 
-              <a
-                href={`mailto:${companyInfo.email}`}
-                className="p-4 rounded-xl bg-brand-card hover:bg-brand-blue/20 border border-white/5 hover:border-brand-cyan/30 transition-all flex gap-3 text-xs"
+              <div
+                className="p-4 rounded-xl bg-brand-card border border-white/5 flex gap-3 text-xs"
               >
                 <Mail className="w-5 h-5 text-brand-cyan shrink-0 mt-0.5" />
-                <div>
+                <div className="flex flex-col gap-1">
                   <span className="text-slate-500 block mb-0.5">{t.emailLabel}</span>
-                  <span className="font-semibold text-white text-sm">{companyInfo.email}</span>
+                  <a href={`mailto:${companyInfo.email}`} className="font-semibold text-white text-sm hover:text-brand-cyan transition-colors block">
+                    {companyInfo.email}
+                  </a>
+                  {companyInfo.secondaryEmail && (
+                    <a href={`mailto:${companyInfo.secondaryEmail}`} className="font-medium text-slate-400 hover:text-brand-cyan transition-colors block mt-0.5">
+                      {companyInfo.secondaryEmail}
+                    </a>
+                  )}
                 </div>
-              </a>
+              </div>
             </div>
           </div>
 

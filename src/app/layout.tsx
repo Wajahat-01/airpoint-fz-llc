@@ -36,7 +36,7 @@ export const viewport = {
 export const metadata: Metadata = {
   title: "AirPoint | Industrial HVAC, Refrigeration & MEP Services UAE",
   description: "Bilingual industrial cooling solutions in the UAE. AC installation, commercial cold rooms, MEP, and 24/7 Annual Maintenance Contracts.",
-  metadataBase: new URL("https://airpoint.ae"),
+  metadataBase: new URL("https://airpoint-llc.com"),
 };
 
 export default function RootLayout({

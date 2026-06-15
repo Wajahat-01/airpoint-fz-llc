@@ -116,6 +116,14 @@ export default function Footer({ locale }: { locale: LocaleType }) {
                   {companyInfo.email}
                 </a>
               </li>
+              {companyInfo.secondaryEmail && (
+                <li className="flex items-start gap-3">
+                  <Mail className="w-4 h-4 text-brand-cyan shrink-0 mt-0.5" />
+                  <a href={`mailto:${companyInfo.secondaryEmail}`} className="hover:text-brand-cyan transition-colors text-sm">
+                    {companyInfo.secondaryEmail}
+                  </a>
+                </li>
+              )}
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-brand-cyan shrink-0 mt-0.5" />
                 <a

@@ -55,6 +55,7 @@ export interface CompanyDetails {
   manager: TranslationText;
   phone: string;
   email: string;
+  secondaryEmail?: string;
   whatsapp: string;
   officeHours: TranslationText;
   mapsUrl: string;
@@ -90,7 +91,8 @@ export const companyInfo: CompanyDetails = {
   },
   phone: "+971 54 495 2370",
   whatsapp: "+971 54 495 2370",
-  email: "info@airpoint.ae",
+  email: "info@airpoint-llc.com",
+  secondaryEmail: "airpointacrefrigeration@gmail.com",
   officeHours: {
     en: "Open 24/7 — Available round the clock",
     ar: "مفتوح 24/7 — متاح على مدار الساعة طوال أيام الأسبوع"
